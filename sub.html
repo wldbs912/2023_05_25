@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>싸니까 믿으니까 인터파크도서</title>
+    <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.0.min.js"></script>
+    <script src="js/mypg.js"></script>
+    <script src="js/topBanner_closeBtn.js"></script>
+    <script src="js/headerBanner.js"></script>
+    <script src="js/allCategory.js"></script>
+    <script src="js/sub/livebook_slider_btn.js"></script>
+    <script src="js/sub/introtext_hidden.js"></script>
+    <script src="js/sub/introtext_get.js"></script>
+    <script src="https://kit.fontawesome.com/9401a2518e.js" crossorigin="anonymous"></script>
+    <link href="css/reset.css" rel="stylesheet">
+    <link href="css/common.css" rel="stylesheet">
+    <link href="css/sub.css" rel="stylesheet">
+</head>
+
+<body>
+    <!--topBanner-->
+    <header>
+        <div id="topBanner">
+            <div class="topBanner_leftWrap">
+                <div class="topBanner_left">
+                    <img src="https://bimage.interpark.com/milti/renewPark/main/95405_202305121642187071.jpg"
+                        alt="topBanner_left_img">
+                </div>
+            </div>
+
+            <div class="topBanner_rightWarp">
+                <div class="topBanner_right">
+                    <img src="https://bimage.interpark.com/milti/renewPark/main/95405_202304071649591782.jpg"
+                        alt="topBanner_right_img">
+                    <div class="topBanner_btn">
+                        <img src="https://tnsumi9723.github.io/sumi_interpark1/img/closeBtn.png"
+                            alt="topBanner_closeBtn">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!--headerNav-->
+        <div id="headerTop">
+            <div class="headerNav">
+                <div class="headerNav_left">
+                    <ul>
+                        <li><a href="#">홈</a></li>
+                        <li><a href="#">투어</a></li>
+                        <li><a href="#">티켓</a></li>
+                        <li><a href="#">쇼핑</a></li>
+                        <li><a href="#">도서</a></li>
+                    </ul>
+                </div>
+
+                <div class="headerNav_right">
+                    <ul>
+                        <li><a href="#">로그인</a></li>
+                        <li><a href="#">회원가입</a></li>
+                        <li><a href="#">북카드</a></li>
+                        <li class="mypg"><a href="#">마이페이지
+                                <img src="https://bimage.interpark.com/UI/pc/main/2016/gnb/arrow_down.png"
+                                    alt="arrow_down" class="arrow_down">
+                                <img src="https://bimage.interpark.com/UI/pc/main/2016/gnb/arrow_up.png" alt="arrow_up"
+                                    class="arrow_up" style="display: none;">
+                            </a>
+                            <ul class="my_list">
+                                <li><a href="#">마이도서</a></li>
+                                <li><a href="#">주문배송조회</a></li>
+                                <li><a href="#">I-포인트적립</a></li>
+                                <li><a href="#">나의할인쿠폰</a></li>
+                                <li><a href="#">회원수정</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="#">북피니언</a></li>
+                        <li><a href="#">고객센터</a></li>
+                        <li><a href="#">모바일APP</a></li>
+                        <li class="language"><a href="#">Language
+                                <img src="https://bimage.interpark.com/UI/pc/main/2016/gnb/arrow_down.png"
+                                    alt="arrow_down" class="arrow_down">
+                                <img src="https://bimage.interpark.com/UI/pc/main/2016/gnb/arrow_up.png" alt="arrow_up"
+                                    class="arrow_up" style="display: none;">
+                            </a>
+                            <ul class="my_language">
+                                <li><a href="#">English</a></li>
+                                <li><a href="#">日本語</a></li>
+                                <li><a href="#">中文</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!--headerMid-->
+        <div id="headerMid">
+            <div class="header_bottom">
+                <div class="header_logosearch">
+                    <div id="logo">
+                        <a href="index.html"><img
+                                src="https://bimage.interpark.com/UI/pc/main/2017/gnb/interparkBook_logo.png"
+                                alt="logo"></a>
+                    </div>
+                    <div id="search">
+                        <div class="search_bar">
+                            <input type="search" class="search_text" style="width: 350px; font-size: 14px; font-weight: bold; padding: 5px; border: none;  color: #666;
+                    line-height: 18px;" placeholder="죽기 전, 반드시 읽어야 하는 책">
+                            <a href="#"><img src="https://bimage.interpark.com/UI/pc/main/2017/gnb/btn_search.png"
+                                    alt="btn_search"></a>
+                        </div>
+                        <ul class="search_barnav">
+                            <li><a href="#">최인아 대표</a></li>
+                            <li>|</li>
+                            <li><a href="#">과학의 위로</a></li>
+                            <li>|</li>
+                            <li><a href="#">이해인 추천</a></li>
+                            <li>|</li>
+                            <li><a href="#">돈많은친구</a></li>
+                            <li>|</li>
+                            <li><a href="#">부와 성공의 법칙</a></li>
+                        </ul>
+                    </div>
+
+                    <div id="headerBanner">
+                        <ul class="headerBanner_slide">
+                            <li><a href="#"><img
+                                        src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/04/71047/GN_hn_0503_1.jpg"
+                                        alt="headerBanner_slide1"></a></li>
+                            <li><a href="#"><img
+                                        src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/04/71047/GN_hn_0503_2.jpg"
+                                        alt="headerBanner_slide2"></a></li>
+                            <li><a href="#"><img
+                                        src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/04/71047/GN_dun_0407.jpg"
+                                        alt="headerBanner_slide3"></a></li>
+
+                            <li><a href="#"><img
+                                        src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/03/31/59288/0331vbwmvmowm.jpg"
+                                        alt="headerBanner_slide4"></a></li>
+
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <!--bookWrapper-->
+            <div id="bookWrapper">
+                <div class="bookNav">
+                    <div class="bookAll">
+                        <div class="allCategory">
+                            <p class="menuicon"><i class="fa-solid fa-bars"
+                                    style="color: #fff; font-size: 14px; margin: 3px 0 0 0px; padding: 5px;"></i></p>
+                            <p>전체 카테고리</p>
+                            <p class="menuicon_down">
+                                <i class="fa-solid fa-chevron-down" style="font-weight: 900; padding: 5px;"
+                                    id="down"></i>
+                            </p>
+                        </div>
+                        <div class="categoryMenu" style="display:none; z-index: 5;">
+                            <div class="mainCategory">
+                                <div class="category1">
+                                    <h3>국내도서</h3>
+                                    <div class="categoryNav">
+                                        <ul>
+                                            <li><a href="#">소설</a></li>
+                                            <li><a href="#">장르소설</a></li>
+                                            <li><a href="#">시·에세이</a></li>
+                                            <li><a href="#">경제경영</a></li>
+                                            <li><a href="#">자기계발</a></li>
+                                            <li><a href="#">사회과학</a></li>
+                                            <li><a href="#">역사·문화</a></li>
+                                            <li><a href="#">예술·대중문화</a></li>
+                                            <li><a href="#">인문</a></li>
+                                            <li><a href="#">자연·과학</a></li>
+                                            <li><a href="#">종교·역학</a></li>
+                                            <li><a href="#">유아</a></li>
+                                            <li><a href="#">아동</a></li>
+                                            <li><a href="#">가정과생활</a></li>
+                                            <li><a href="#">청소년</a></li>
+                                            <li><a href="#">초등학습</a></li>
+                                            <li><a href="#">중등학습</a></li>
+                                            <li><a href="#">고등학습</a></li>
+                                            <li><a href="#">국어·외국어·사전</a></li>
+                                        </ul>
+                                        <ul>
+                                            <li><a href="#">자격서·수험서</a></li>
+                                            <li><a href="#">공무원 수험서</a></li>
+                                            <li><a href="#">컴퓨터·인터넷</a></li>
+                                            <li><a href="#">전공·대학교재</a></li>
+                                            <li><a href="#">여행</a></li>
+                                            <li><a href="#">취미레저</a></li>
+                                            <li><a href="#">건강뷰티</a></li>
+                                            <li><a href="#">잡지</a></li>
+                                            <li><a href="#">만화·라이트노벨</a></li>
+                                            <li><a href="#">유아동전집</a></li>
+                                            <li><a href="#" style="color: #f15300;">예약판매</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category2">
+                                    <h3>외국도서</h3>
+                                    <div class="categoryNav2">
+                                        <ul>
+                                            <li><a href="#">어린이</a></li>
+                                            <li><a href="#">문학</a></li>
+                                            <li><a href="#">ELT·사전</a></li>
+                                            <li><a href="#">컴퓨터</a></li>
+                                            <li><a href="#">경제·인문</a></li>
+                                            <li><a href="#">실용·예술</a></li>
+                                            <li><a href="#">대학·전문서적</a></li>
+                                            <li><a href="#">해외잡지</a></li>
+                                            <li><a href="#">학습교구/게임</a></li>
+                                            <li><a href="#">프랑스도서</a></li>
+                                            <li><a href="#" style="color: #f15300;">예약판매</a></li>
+                                            <li><a href="#" style="color: #f15300;">원서vs번역서</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="category3">
+                                    <h3 class="goods" style="cursor: pointer;">굿즈#></h3>
+                                    <div class="categoryNav3">
+                                        <ul>
+                                            <li><a href="#">문구/팬시</a></li>
+                                            <li><a href="#">사무/학용</a></li>
+                                            <li><a href="#">학습</a></li>
+                                            <li><a href="#">독서용품</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="btnX"><img
+                                        src="https://tnsumi9723.github.io/sumi_interpark1/img/icon_closeX.png"
+                                        alt="closeX"
+                                        style="padding: 5px; float: right; width: 30px; height: 30px; object-fit: cover; margin: 10px 0 0 0px;">
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="secondNav">
+                        <ul>
+                            <li><a href="#">베스트셀러</a></li>
+                            <li><a href="#">신간</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!--section-->
+    <section id="subSection">
+        <section id="subSection_group">
+            <!--nav-->
+            <div class="subNav">
+                <ul>
+                    <li><a href="#">홈<i class="fas fa-caret-down"></i></a></li>
+                    <li><i class="fas fa-angle-right"></i></li>
+                    <li><a href="#">국내도서<i class="fas fa-caret-down"></i></a></li>
+                    <li><i class="fas fa-angle-right"></i></li>
+                    <li><a href="#">자기계발<i class="fas fa-caret-down"></i></a></li>
+                    <li><i class="fas fa-angle-right"></i></li>
+                    <li><a href="#">성공스토리<i class="fas fa-caret-down"></i></a></li>
+                    <li><i class="fas fa-angle-right"></i></li>
+                </ul>
+            </div>
+            <!--title-->
+            <div class="subTitle">
+                <div class="titleLeft">
+                    <h3>운명을 바꾸는 행동의 힘 <span class="titleLeft_text"> : 경제적 자유와 목표 달성을 원한다면 지금 당장 움직여라</span></h3>
+                    <span class="titleLeft_text2">소득공제</span>
+                </div>
+                <div class="titleRight">
+                    <div class="titleRight_text">
+                        <span>★★★★★</span>
+                        <span>9.7</span>
+                        <span>|</span>
+                        <span><i class="fa-regular fa-pen-to-square"></i> 리뷰</span>
+                    </div>
+                </div>
+            </div>
+
+            <!--prouduct-->
+
+            <div class="subProduct">
+
+                <!--prouductLeft-->
+                <div class="subProduct_left">
+                    <div class="productImgbox">
+                        <img src="https://contents.kyobobook.co.kr/sih/fit-in/458x0/pdt/9791191283280.jpg"
+                            alt="bookimg">
+                    </div>
+                    <div class="productBtnbox">
+                        <ul>
+                            <li><a href="#"><img src="https://subin114.github.io/portfolio_03/img/product_btn1.png"
+                                        style="-webkit-user-drag:none" alt="크게보기"></a></li>
+                            <li><a href="#"><img src="https://subin114.github.io/portfolio_03/img/product_btn2.png"
+                                        style="-webkit-user-drag:none" alt="미리보기"></a></li>
+                        </ul>
+                    </div>
+                    <div class="productDivbox">
+                        <ul>
+                            <li>공유하기 <img src="https://subin114.github.io/portfolio_03/img/icon_share1.png"
+                                    alt="공유하기icon1"><img
+                                    src="https://subin114.github.io/portfolio_03/img/icon_share2.png" alt="공유하기icon2">
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <!--prouductLefRight-->
+                <div class="subProduct_right">
+                    <div class="productInfo">
+                        <p>그는 어떻게 5년 만에 100억 원을 벌 수 있었을까?</p>
+                        <ul>
+                            <li>저 : <span>유선국</span></li>
+                            <li>|</li>
+                            <li>출판사 : <span>라온북</span></li>
+                            <li>|</li>
+                            <li>발행 : <span>2021년 03월 24일</span></li>
+                            <li>|</li>
+                            <li>쪽수 : <span>248</span></li>
+                            <li>|</li>
+                            <li>ISBN : <span>9791191283280</span></li>
+                        </ul>
+                    </div>
+                    <div class="productInfo_box">
+                        <table>
+                            <tr>
+                                <th style="text-align: center;">정가</th>
+                                <td>14,000원</td>
+                            </tr>
+                            <tr style="height: 90px;">
+                                <th>
+                                    <div class="priceBox">
+                                        <h4>새책</h4>
+                                        <h3>12,600원<span> (10%할인)</span></h3>
+                                        <p>700P<span> (5%할인)</span></p>
+                                    </div>
+                                </th>
+                                <th></th>
+                            </tr>
+                            <tr>
+                                <th>할인혜택</th>
+                                <td class="tdCursor">
+                                    카드/간편결제 할인 <i class="fas fa-angle-right"></i> | 카카오페이 5만원이상 결제시 3천원 즉시할인! <i
+                                        class="fas fa-angle-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>적립혜택</th>
+                                <td>
+                                    <span class="tdSpan1">700P</span>
+                                    (5%적립)
+                                    |
+                                    <span class="tdSpan2">5만원이상 주문시 2천P+등급별 최대 1.5%적립</span>
+                                    <i class="fas fa-angle-right"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>
+                                <td>
+                                    I-Point 적립은 마이페이지에서 직접
+                                    <span class="tdSpan3">구매확정</span>하신 경우만 적립됩니다.
+                                </td>
+                                </th>
+                            </tr>
+                            <tr>
+                                <th>추가해택</th>
+                                <td><img src="https://openimage.interpark.com/ad_2018/min/book18219_1.jpg" alt="추가해택1"
+                                        style="cursor: pointer;">
+                                    <span style="color: #aaa;">|</span>
+                                    <img src="https://openimage.interpark.com/ad_2020/book/2004_book_18219.jpg"
+                                        alt="추가해택2" style="cursor: pointer; margin-left: 15px;">
+                                    <span style="color: #aaa;">|</span>
+                                    <img src="https://openimage.interpark.com/ad_2021/min/2112_book_mincash_18219.png"
+                                        alt="추가해택3" style="cursor: pointer; margin-left: 15px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th></th>
+                                <td colspan="1">
+                                    <img src="http://bimage.interpark.com/milti/renewPark/main/112041_202303292240213811.jpg"
+                                        alt="tabblebannerimg" style="width:650px; height: 36px;">
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>배송정보</th>
+                                <td>
+                                    <span class="tdSpan4">5/25(목) 이내 발송 예정 (서울시 강남구 삼성로 512) <img
+                                            src="http://bimage.interpark.com/renewPark/last_inc1007/ico_help1.gif"
+                                            alt="help"></span>
+                                    <span class="tdSpan5">| 무료배송
+                                        <img src="http://bimage.interpark.com/renewPark/last_inc1007/ico_help1.gif"
+                                            alt="help">
+                                    </span>
+                                </td>
+                            </tr>
+                            <tr>
+                                <th>주문수량</th>
+                                <td><select name="select" id="select">
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                    </select></td>
+                            <tr>
+                        </table>
+                        <div class="productBtn">
+                            <button>북카트 담기</button>
+                            <button>바로구매</button>
+                            <button>🤍</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="subBanner">
+                <div class="subBanner_box">
+                    <div class="bannerText1">
+                        <p>이벤트/기획전</p>
+                    </div>
+                    <div class="bannerText2">
+                        <p>연관도서</p>
+                    </div>
+                    <div class="bannerText3">
+                        <p>상품권</p>
+                    </div>
+                </div>
+                <div class="bannerSlide">
+                    <div class="bannerSlide_img">
+                        <img src="http://bimage.interpark.com/renewPark/reBookpark/test_img/last_inc/book_benefit.jpg"
+                            alt="bannerSlide_img">
+                    </div>
+                    <div class="bannerSlide_img2">
+                        <img src="https://simage.kyobobook.co.kr/newimages/adcenter/IMAC/creatives/2023/05/19/71047/sang_0517_2.jpg"
+                            alt="bannerSlide_img2">
+                    </div>
+                </div>
+            </div>
+            <div class="subContent">
+                <!--submenu nav-->
+                <div id="subMenu_nav">
+                    <ul class="subMenu_list">
+                        <li class="on1"><a href="#">책정보</a></li>
+                        <li><a href="#">이벤트/기획전</a></li>
+                        <li><a href="#">추천도서</a></li>
+                        <li><a href="#">100자평/리뷰</a></li>
+                        <li><a href="#">교환/환불/배송</a></li>
+                    </ul>
+                </div>
+                <!--책정보-->
+                <div id="bookintro">
+                    <div class="bookTitle">
+                        <h2>이상품의 분류</h2>
+                    </div>
+                    <div class="bookTitle_list">
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li><a href="#">도서</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li><a href="#">자기계발</a></li>
+                            <li><i class="fa-solid fa-angle-right"></i></li>
+                            <li style="font-weight: bold;"><a href="#">성공스토리</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--라이브북-->
+                <div class="liveBook">
+                    <div class="liveTitle">
+                        <h2>라이브북</h2>
+                    </div>
+                    <div class="liveContent">
+                        <div class="liveContent_box1">
+                            <div class="liveContent_wrap">
+                                <ul class="liveSlide" style="margin-left: 0; width: 3700px;">
+                                    <li><img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832801.jpg"
+                                            alt="liveSlide1"></li>
+                                    <li><img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832802.jpg"
+                                            alt="liveSlide2"></li>
+                                    <li><img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832803.jpg"
+                                            alt="liveSlide3"></li>
+                                    <li><img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832804.jpg"
+                                            alt="liveSlide4"></li>
+                                    <li><img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832805.jpg"
+                                            alt="liveSlide5"></li>
+                                    <li><img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832806.jpg"
+                                            alt="liveSlide6"></li>
+                                    <li><img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832807.jpg"
+                                            alt="liveSlide7"></li>
+                                    <li><img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832808.jpg"
+                                            alt="liveSlide8"></li>
+                                    <li><img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832809.jpg"
+                                            alt="liveSlide9"></li>
+                                    <li><img src="https://contents.kyobobook.co.kr/dtl/cardnews/979119128328010.jpg"
+                                            alt="liveSlide10"></li>
+                                </ul>
+                            </div>
+                            <span class="livePrev">
+                                <</span>
+                                    <span class="liveNext">></span>
+                        </div>
+                        <div class="liveContent_box2">
+                            <div class="imgboxWrap">
+                                <div class="imgBox">
+                                    <img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832801.jpg"
+                                        alt="liveSlide1">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832802.jpg"
+                                        alt="liveSlide2">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832803.jpg"
+                                        alt="liveSlide3">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832804.jpg"
+                                        alt="liveSlide4">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832805.jpg"
+                                        alt="liveSlide5">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832806.jpg"
+                                        alt="liveSlide6">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832807.jpg"
+                                        alt="liveSlide7">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832808.jpg"
+                                        alt="liveSlide8">
+                                </div>
+                                <div class="imgBox">
+                                    <img src="https://contents.kyobobook.co.kr/dtl/cardnews/97911912832809.jpg"
+                                        alt="liveSlide9">
+                                </div>
+                                <div class="imgBox" style="display: none;">
+                                    <img src="https://contents.kyobobook.co.kr/dtl/cardnews/979119128328010.jpg"
+                                        alt="liveSlide10">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--책소개-->
+                <div class="bookIntroduce">
+                    <div class="introTitle">
+                        <h2>책소개</h2>
+                    </div>
+                    <div class="introText" style="height: auto;">
+                    </div>
+                    <div class="spread">
+                        <p class="textSpread">
+                            펼쳐보기
+                            <i class="fas fa-chevron-down"></i>
+                        </p>
+                        <p class="textSpread" style="display: none;">
+                            접어보기
+                            <i class="fas fa-chevron-up"></i>
+                        </p>
+                    </div>
+                </div>
+                <!--출판사 서평-->
+                <div class="publisher">
+                    <div class="pubTitle">
+                        <h2>출판사 서평</h2>
+                    </div>
+                    <div class="pubText" style="height: auto;">
+                    
+                    </div>
+                    <div class="spread">
+                        <p class="pubSpread">
+                            펼쳐보기
+                            <i class="fas fa-chevron-down"></i>
+                        </p>
+                        <p class="pubSpread" style="display: none;">
+                            접어보기
+                            <i class="fas fa-chevron-up"></i>
+                        </p>
+                    </div>
+                    </div>
+                    <!--목차-->
+                    <div class="index">
+                        <div class="indexTitle">
+                            <h2>목차</h2>
+                        </div>
+                        <div class="indexText" style="height: auto;">
+                        </div>
+                        <div class="spread">
+                            <p class="indexSpread">
+                                펼쳐보기
+                                <i class="fas fa-chevron-down"></i>
+                            </p>
+                            <p class="indexSpread" style="display: none;">
+                                접어보기
+                                <i class="fas fa-chevron-up"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <!--본문중에서-->
+                    <div class="maintext">
+                        <div class="maintextTitle">
+                            <h2>본문중에서</h2>
+                        </div>
+                        <div class="maintextText" style="height: auto;">
+                        </div>
+                        <div class="spread">
+                            <p class="maintextSpread">
+                                펼쳐보기
+                                <i class="fas fa-chevron-down"></i>
+                            </p>
+                            <p class="maintextSpread" style="display: none;">
+                                접어보기
+                                <i class="fas fa-chevron-up"></i>
+                            </p>
+                        </div>
+                    </div>
+                    <!--관련이미지-->
+                    <div class="relationimg">
+                        <div class="relationimgTitle">
+                            <h2>관련이미지</h2>
+                        </div>
+                        <div class="relationimgImg">
+                            <img src="https://qi-b.qoo10cdn.com/partner/goods_image/6/1/4/8/347776148b.jpg" alt="관련이미지">
+                        </div>
+                    </div>
+                    <!--저자소개-->
+                    <div class="author">
+                        <div class="authorTitle">
+                            <h2>저자소개</h2>
+                        </div>
+                        <div class="authorText">
+                            <div class="authorName">
+                                <h2>유선국 [저]</h2>
+                                <span><a href="#">신작알림 SMS신청<i class="fa-solid fa-angle-right"></i></a></span>
+                            </div>
+                            <div class="authorInfo">
+                                <div class="author_birth">
+                                    <p style="color: #717171;">생년월일</p>
+                                    <span style="color: #717171;">-</span>
+                                </div>
+                                <div class="author_text">
+                                    <p style="color: #717171;">해당작가에 대한 소개가 없습니다.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--상품정보제공고시-->
+                    <div class="notice">
+                        <div class="noticeTitle">
+                            <h2>상품정보제공고시</h2>
+                        </div>
+                    <div class="noticeBox">
+                        <table>
+                            <tr>
+                                <th>저자</th>
+                                <td>유선국</td>
+                                <th>기획사/제작사</th>
+                                <td>라온북</td>
+                            </tr>
+                            <tr>
+                                <th>ISBN</th>
+                                <td>9791191283280</td>
+                                <th>쪽수</th>
+                                <td>248쪽</td>
+                            </tr>
+                            <tr>
+                                <th>크기</th>
+                                <td>141*210*19</td>
+                                <th>제품구성</th>
+                                <td style="line-height: 20px;">공급업체 특성상 정보확인이 어려우니, 정확한 정보를 확인하시려면 1:1문의게시판을 이용 바랍니다.</td>
+                            </tr>
+                            <tr>
+                                <th>발행일(출간일)</th>
+                                <td>2021년 03월24일</td>
+                                <th>목차 또는 책소개</th>
+                                <td style="line-height: 20px;">상품 상세 정보를 확인하시고, 정보확인이 어려우시면 1:1문의 게시판을 이용 바랍니다.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+                <!--이벤트 기획전-->
+                <div class="event">
+                    <div class="eventTitle">
+                        <h2>이벤트 기획전</h2>
+                    </div>
+                    <div class="eventbox">
+                        <a href="#"><img src="http://bimage.interpark.com/milti/renewPark/main/64631_202304240852548701.jpg" alt="eventbox1"></a>
+                    </div>
+                    <div class="eventbox2">
+                        <a href="#"><img src="http://bimage.interpark.com/milti/renewPark/main/64631_202304111027138261.jpg" alt="eventbox2"></a>
+                    </div>
+                </div>
+                <!--자기계발 분야에서 많은 회원이 구매한 책-->
+                <div class="sub_recommendWrap">
+                    <div class="subRecommend">
+                        <h2>· 자기계발 분야에서 많은 회원이 구매한 책</h2>
+                        <div class="subRecommend_content">
+                            <ul class="subRecommend_list" style="margin-left: 0;">
+                            <li></li>
+                            <li></li>
+                        </ul>
+                        </div>
+                        <span class="subPrev"></span>
+                        <span class="subNext"></span>
+                    </div>
+                    <div class="subRecommend"></div>
+                    <div class="subRecommend"></div>
+                </div>
+            </div>
+        </div>
+        </section>
+    </section>
+
+    <!--footer-->
+    <footer>
+        <div id="footerWrap">
+            <div class="footerNav">
+                <ul>
+                    <li><a href="#"><span>개인정보처리방침</span></a></li>
+                    <li>|</li>
+                    <li><a href="#">청소년보호정책</a></li>
+                    <li>|</li>
+                    <li><a href="#">이용약관</a></li>
+                    <li>|</li>
+                    <li><a href="#">IR</a></li>
+                    <li>|</li>
+                    <li><a href="#">회사소개</a></li>
+                    <li>|</li>
+                    <li><a href="#">채용공고</a></li>
+                    <li>|</li>
+                    <li><a href="#">우수고객제도</a></li>
+                    <li>|</li>
+                    <li><a href="#">수익배분프로그램</a></li>
+                    <li>|</li>
+                    <li><a href="#">광고안내</a></li>
+                    <li>|</li>
+                    <li><a href="#">담당자안내</a></li>
+                    <li>|</li>
+                    <li><a href="#">판매자매니저</a></li>
+                </ul>
+            </div>
+            <div class="footerMid">
+                <div class="footerMid_1">
+                    <dl>
+                        <dt>(주)인터파크커머스</dt>
+                        <dd>주소 | 서울특별시 서초구 강남대로 447(서초동, 남서울빌딩)</dd>
+                        <dd>사업자등록번호 | 422-81-03185</dd>
+                        <dd>호스팅서비스 제공자 | (주)인터파크커머스</dd>
+                        <dd>대표이사 | 김양선</dd>
+                        <dd>통신판매업신고 | 2023-서울서초-0823</dd>
+                    </dl>
+                </div>
+                <div class="footerMid_2">
+                    <dl>
+                        <dt>고객센터 <a href="#"><img
+                                    src="https://subin114.github.io/portfolio_03/img/btn_main_qnaClick.gif"
+                                    alt="문의전클릭"></a></dt>
+                        <dd>전화 1577-2555</dd>
+                        <dd>팩스 02-6924-9050</dd>
+                        <dd>이메일 <a href="#">helpshop@interparkshop.com</a></dd>
+                        <dd>개인정보보호책임자 <a href="#">cposhopping@interparkshop.com</a></dd>
+                        <dd>개인정보보유기간 회원탈퇴시까지</dd>
+                    </dl>
+                </div>
+                <div class="footerMid_3">
+                    <dl>
+                        <dt>구매안전 서비스</dt>
+                        <dd>고객님은 안전거래를 위해 현금으로 5만원 이상 결제시 구매자가 보호를 받을 수 있는 구매안전 서비스를(쇼핑몰보증보험) 이용하실수 있습니다. <br> <a
+                                href="#"><img
+                                    src="https://subin114.github.io/portfolio_03/img/btn_main_bottomService.gif"
+                                    alt="서비스 가입사실 확인"></a></dd>
+                    </dl>
+                </div>
+            </div>
+            <div class="footerBottom">
+                <p class="footerBottom_1">주식회사 인터파크커머스는 인터파크 쇼핑, 인터파크 도서의 통신판매중개자로서 통신판매의 당사자가 아니므로, 개별 판매자가 등록한 오픈마켓
+                    상품에 대해서 주식회사 인터파크커머스는 일체 책임을 지지 않습니다.</p>
+                <p class="footerBottom_2">Copyright © INTERPARK COMMERCE Corporation ALL Rights Reserved.</p>
+            </div>
+
+        </div>
+    </footer>
+</body>
+
+</html>
